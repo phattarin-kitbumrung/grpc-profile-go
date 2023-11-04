@@ -1,0 +1,22 @@
+{
+    "profile": {
+        "introduction": "This is minizymint profile",
+        "aboutMe": {
+            "fullname": "phattarin kitbumrung",
+            "address": "xxx",
+            "email": "xxx",
+            "mobile": "xxx",
+            "nickname": "mint",
+            "birthday": "xxx",
+            "religion": "xxx",
+            "github": "xxx",
+            "linkedin": "xxx",
+            "medium": "xxx"
+        },
+        "educations":["cs22"],
+        "certifications": ["microsoft"],
+        "workexperiences":["w1", "w2"],
+        "skills": ["s1", "s2"]
+    },
+    "filename": "test.png"
+}

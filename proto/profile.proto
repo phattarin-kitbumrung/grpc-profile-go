@@ -1,0 +1,39 @@
+syntax = "proto3";
+package services;
+option go_package="./services";
+
+service Profile {
+    rpc Profile(stream ProfileRequest) returns(stream ProfileResponse);
+}
+
+message AboutMe {
+    string fullname = 1;
+    string address = 2;
+    string email = 3;
+    string mobile = 4;
+    string nickname = 5;
+    string birthday = 6;
+    string religion = 7;
+    string github = 8;
+    string linkedin = 9;
+    string medium = 10;
+}
+
+message MyProfile {
+    string introduction = 1;
+    AboutMe aboutMe = 2;
+    repeated string educations = 3;
+    repeated string certifications = 4;
+    repeated string workexperiences = 5;
+    repeated string skills = 6;
+}
+
+message ProfileRequest {
+    MyProfile profile = 1;
+    string filename = 2;
+}
+
+message ProfileResponse {
+    MyProfile profile = 1;
+    string filename = 2;
+}
